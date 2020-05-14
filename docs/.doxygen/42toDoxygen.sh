@@ -10,11 +10,11 @@ if [ $? -ne 0 ]; then
 else
 	find . -name "*.c" -exec perl -i -pe 's/^\/\*$/\/\*\*/' {} \;
 	find . -name "*.h" -exec perl -i -pe 's/^\/\*$/\/\/\/\\file\n\/\*\*/' {} \;
-	doxygen doc/.doxygen/Doxyfile
+	doxygen docs/.doxygen/Doxyfile
 	find . -name "*.c" -exec perl -i -pe 's/^\/\*\*$/\/\*/' {} \;
 	find . -name "*.h" -exec perl -i -pe 's/^\/\*\*$/\/\*/' {} \; \
 					   -exec perl -i -pe 's/\/\/\/\\file//' {} \;
-	make -C latex && cp latex/refman.pdf doc/documentation.pdf
+	make -C latex && cp latex/refman.pdf docs/documentation.pdf
 	rm -r latex
-	ln -sf documentation-html/libft_8h.html doc/documentation.html 
+	ln -sf documentation-html/libft_8h.html docs/documentation.html 
 fi
