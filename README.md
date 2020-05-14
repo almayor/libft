@@ -5,10 +5,10 @@
 ### Overview
 
 
-* [Official instructions](resources/libft.en.pdf)
+* [Official instructions](doc/libft.en.pdf)
 * The task is to recreate various standard C library functions, as well as additional useful functions.
 * Documentation ([html](https://rawcdn.githack.com/almayor/libft/c8f1d0270d43dbdd3ebe6c12aa1bc6ac23ddcd15/doc/documentation-html/libft_8h.html), [pdf](./doc/documentation.pdf)) generated with [Doxygen](http://www.doxygen.nl).
-* The project is consistent with the [Norme](resources/norme.en.pdf), the code standard accepted at *School 42*.
+* The project is consistent with the [Norme](doc/norme.en.pdf), the code standard accepted at *School 42*.
 * Use `make` to compile the library and include in projects with
 ```c
 #include "libft.h"
