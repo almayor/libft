@@ -6,7 +6,7 @@
 #    By: unite <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/26 02:09:26 by unite             #+#    #+#              #
-#    Updated: 2020/05/14 17:41:43 by unite            ###   ########.fr        #
+#    Updated: 2020/05/14 20:27:13 by unite            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -133,7 +133,7 @@ DEP = $(patsubst %.c, $(PATHO)/%.d, $(SRC_NAME))
 
 ################################################################################
 
-.PHONY : all clean fclean re doc
+.PHONY : all clean fclean re docs
 
 all : $(NAME)
 
@@ -145,7 +145,7 @@ clean :
 
 re : fclean all
 
-doc :
-	doc/.doxygen/42toDoxygen.sh
+docs :
+	docs/.doxygen/42toDoxygen.sh
 
 ################################################################################
