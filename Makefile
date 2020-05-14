@@ -6,7 +6,7 @@
 #    By: unite <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/26 02:09:26 by unite             #+#    #+#              #
-#    Updated: 2020/05/14 20:27:13 by unite            ###   ########.fr        #
+#    Updated: 2020/05/15 02:07:22 by unite            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,6 @@ NAME = libft.a
 SRC_NAME = \
 ft_atoi.c \
 ft_bzero.c \
-ft_chrinstr.c \
 ft_isalnum.c \
 ft_isalpha.c \
 ft_isascii.c \
