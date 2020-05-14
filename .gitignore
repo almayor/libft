@@ -2,4 +2,3 @@
 objs
 .idea
 CMakeLists.txt
-.doxygen
