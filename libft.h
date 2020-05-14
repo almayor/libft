@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 15:17:22 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 21:53:46 by unite            ###   ########.fr       */
+/*   Updated: 2020/05/14 03:04:15 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-int					ft_abs(int a);
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_chrinstr(char c, const char *str);
