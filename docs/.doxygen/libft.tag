@@ -7,6 +7,13 @@
     <class kind="struct">s_list</class>
     <member kind="function">
       <type>int</type>
+      <name>ft_abs</name>
+      <anchorfile>libft_8h.html</anchorfile>
+      <anchor>a163185d27fa8ec91746327e1666b4ceb</anchor>
+      <arglist>(int a)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
       <name>ft_atoi</name>
       <anchorfile>libft_8h.html</anchorfile>
       <anchor>afad2ec371b4188602da9a94db687cb16</anchor>
@@ -125,6 +132,13 @@
       <arglist>(void const *content, size_t content_size)</arglist>
     </member>
     <member kind="function">
+      <type>int</type>
+      <name>ft_max</name>
+      <anchorfile>libft_8h.html</anchorfile>
+      <anchor>aa468cba11bacd87446892eb6cdfeeb03</anchor>
+      <arglist>(int a, int b)</arglist>
+    </member>
+    <member kind="function">
       <type>void *</type>
       <name>ft_memalloc</name>
       <anchorfile>libft_8h.html</anchorfile>
@@ -179,6 +193,13 @@
       <anchorfile>libft_8h.html</anchorfile>
       <anchor>ac340ddbfddbbf2c8de3c36f0f28c336d</anchor>
       <arglist>(void *b, int c, size_t len)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>ft_min</name>
+      <anchorfile>libft_8h.html</anchorfile>
+      <anchor>ab3702e95ac61d3784ebcb4be203dcc1f</anchor>
+      <arglist>(int a, int b)</arglist>
     </member>
     <member kind="function">
       <type>int</type>

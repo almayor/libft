@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 15:17:22 by unite             #+#    #+#             */
-/*   Updated: 2020/05/14 17:13:28 by unite            ###   ########.fr       */
+/*   Updated: 2020/05/17 02:06:56 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,6 @@
 # define LIBFT_H
 
 # include <string.h>
-
-
-
-
-
 
 
 
@@ -43,6 +38,7 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+inline int			ft_abs(int a);
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_isalnum(int c);
@@ -60,6 +56,7 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstlast(t_list *head);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
+inline int			ft_max(int a, int b);
 void				*ft_memalloc(size_t size);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memchr(const void *s, int c, size_t n);
@@ -68,6 +65,7 @@ void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				ft_memdel(void **ap);
 void				*ft_memmove(void *dst, const void *src, size_t n);
 void				*ft_memset(void *b, int c, size_t len);
+inline int			ft_min(int a, int b);
 int					ft_power(int num, unsigned int exponent);
 void				ft_putchar(char c);
 void				ft_putchar_fd(char c, int fd);
