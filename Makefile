@@ -101,8 +101,8 @@ RM = /bin/rm
 MKDIR = /bin/mkdir
 
 COMPILE = $(GCC) -c
-ARCHIVE = ar rc
-INDEX = ranlib
+ARCHIVE = /usr/bin/ar rc
+INDEX = /usr/bin/ranlib
 LINK = $(GCC)
 
 CFLAGS = -Wall -Wextra -Werror
