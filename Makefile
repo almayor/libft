@@ -100,10 +100,10 @@ PATHO = obj
 RM = /bin/rm
 MKDIR = /bin/mkdir
 
-COMPILE = gcc -c
+COMPILE = $(GCC) -c
 ARCHIVE = ar rc
 INDEX = ranlib
-LINK = gcc
+LINK = $(GCC)
 
 CFLAGS = -Wall -Wextra -Werror
 CFLAGS += -I$(PATHI)
