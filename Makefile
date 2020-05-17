@@ -6,7 +6,7 @@
 #    By: unite <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/26 02:09:26 by unite             #+#    #+#              #
-#    Updated: 2020/05/17 03:46:03 by unite            ###   ########.fr        #
+#    Updated: 2020/05/17 04:30:09 by unite            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,11 +99,12 @@ PATHO = obj
 
 RM = /bin/rm
 MKDIR = /bin/mkdir
+CC = /usr/bin/gcc
 
-COMPILE = $(GCC) -c
+COMPILE = $(CC) -c
 ARCHIVE = /usr/bin/ar rc
 INDEX = /usr/bin/ranlib
-LINK = $(GCC)
+LINK = $(CC)
 
 CFLAGS = -Wall -Wextra -Werror
 CFLAGS += -I$(PATHI)
