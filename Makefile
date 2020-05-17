@@ -6,7 +6,7 @@
 #    By: unite <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/26 02:09:26 by unite             #+#    #+#              #
-#    Updated: 2020/05/17 02:31:17 by unite            ###   ########.fr        #
+#    Updated: 2020/05/17 03:46:03 by unite            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -97,6 +97,9 @@ PATHO = obj
 
 ################################################################################
 
+RM = /bin/rm
+MKDIR = /bin/mkdir
+
 COMPILE = gcc -c
 ARCHIVE = ar rc
 INDEX = ranlib
@@ -124,7 +127,7 @@ $(NAME) : $(OBJ)
 	$(INDEX) $(NAME)
 
 $(PATHO)/%.o : $(PATHS)/%.c
-	mkdir -p $(@D)
+	$(MKDIR) -p $(@D)
 	$(COMPILE) $(CFLAGS) $(CFLAGS_DEPEND) $(CFLAGS_OPTIMISE) $< -o $@
 
 ################################################################################
@@ -140,10 +143,10 @@ DEP = $(patsubst %.c, $(PATHO)/%.d, $(SRC_NAME))
 all : $(NAME)
 
 fclean : clean
-	rm -f $(NAME)
+	$(RM) -f $(NAME)
 
 clean :
-	rm -rf $(PATHO)
+	$(RM) -rf $(PATHO)
 
 re : fclean all
 
