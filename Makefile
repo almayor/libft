@@ -6,7 +6,7 @@
 #    By: unite <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/26 02:09:26 by unite             #+#    #+#              #
-#    Updated: 2020/05/22 04:09:58 by unite            ###   ########.fr        #
+#    Updated: 2020/05/22 18:47:55 by unite            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ ft_lstlast.c \
 ft_lstmap.c \
 ft_lstnew.c \
 ft_max.c \
+ft_memalloc.c \
 ft_memccpy.c \
 ft_memchr.c \
 ft_memcmp.c \
@@ -100,10 +101,12 @@ PATHO = obj
 RM = /bin/rm
 MKDIR = /bin/mkdir
 CC = /usr/bin/gcc
-
-COMPILE = $(CC) -c
 ARCHIVE = /usr/bin/ar rc
 INDEX = /usr/bin/ranlib
+
+################################################################################
+
+COMPILE = $(CC) -c
 LINK = $(CC)
 
 CFLAGS = -Wall -Wextra -Werror
