@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 00:27:33 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:40:48 by unite            ###   ########.fr       */
+/*   Updated: 2020/05/22 04:11:52 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,16 @@
 #include <stdlib.h>
 
 /*
-** Allocates (with `malloc`) and returns a “fresh” memory area.
-** The memory allocated is initialized to 0.
-** If the allocation fails, the function returns `NULL`.
-** @param size The size of the memory that needs to be allocated.
-** @return The allocated memory area.
+** Mimic behaviour of a function of the same name (sans `ft_`) from `libc`.
 */
 
-void	*ft_memalloc(size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	char	*mem;
+	void	*mem;
 
-	mem = malloc(size);
+	mem = malloc(count * size);
 	if (mem == NULL)
 		return (NULL);
-	ft_memset(mem, 0, size);
+	ft_bzero(mem, count * size);
 	return (mem);
 }

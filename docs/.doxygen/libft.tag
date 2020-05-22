@@ -2,7 +2,7 @@
 <tagfile>
   <compound kind="file">
     <name>libft.h</name>
-    <path>/Users/almayor/Documents/programming/42/libft/</path>
+    <path>/Users/almayor/Documents/programming/42/push_swap/libftprintfgnl/libft/</path>
     <filename>libft_8h</filename>
     <class kind="struct">s_list</class>
     <member kind="function">
@@ -25,6 +25,13 @@
       <anchorfile>libft_8h.html</anchorfile>
       <anchor>a5937ab0d08e31d0e3e4a16ec71e293a1</anchor>
       <arglist>(void *s, size_t n)</arglist>
+    </member>
+    <member kind="function">
+      <type>void *</type>
+      <name>ft_calloc</name>
+      <anchorfile>libft_8h.html</anchorfile>
+      <anchor>a6747f1fa402c0eb1dde5b99d3cdc900f</anchor>
+      <arglist>(size_t count, size_t size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -137,13 +144,6 @@
       <anchorfile>libft_8h.html</anchorfile>
       <anchor>aa468cba11bacd87446892eb6cdfeeb03</anchor>
       <arglist>(int a, int b)</arglist>
-    </member>
-    <member kind="function">
-      <type>void *</type>
-      <name>ft_memalloc</name>
-      <anchorfile>libft_8h.html</anchorfile>
-      <anchor>a5d526be072b01f6b566142e40540783f</anchor>
-      <arglist>(size_t size)</arglist>
     </member>
     <member kind="function">
       <type>void *</type>

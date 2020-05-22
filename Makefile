@@ -6,7 +6,7 @@
 #    By: unite <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/26 02:09:26 by unite             #+#    #+#              #
-#    Updated: 2020/05/17 04:30:09 by unite            ###   ########.fr        #
+#    Updated: 2020/05/22 04:09:58 by unite            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ SRC_NAME = \
 ft_abs.c \
 ft_atoi.c \
 ft_bzero.c \
+ft_calloc.c \
 ft_isalnum.c \
 ft_isalpha.c \
 ft_isascii.c \
@@ -32,7 +33,6 @@ ft_lstlast.c \
 ft_lstmap.c \
 ft_lstnew.c \
 ft_max.c \
-ft_memalloc.c \
 ft_memccpy.c \
 ft_memchr.c \
 ft_memcmp.c \
