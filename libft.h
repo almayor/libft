@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 15:17:22 by unite             #+#    #+#             */
-/*   Updated: 2020/05/22 18:46:59 by unite            ###   ########.fr       */
+/*   Updated: 2020/05/23 18:58:13 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <string.h>
-
 
 /*
 ** @struct s_list
@@ -30,6 +29,7 @@
 ** @var s_list::next
 ** The next link’s address or `NULL` if it’s the last link.
 */
+
 typedef struct		s_list
 {
 	void			*content;
