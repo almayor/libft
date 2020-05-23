@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:04:34 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:41:07 by unite            ###   ########.fr       */
+/*   Updated: 2020/05/23 18:18:01 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	c1 = (unsigned char)c;
 	while (len-- > 0)
 	{
-		*s = c;
+		*s = c1;
 		s++;
 	}
 	return (b);
