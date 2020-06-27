@@ -6,7 +6,7 @@
 #    By: unite <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/26 02:09:26 by unite             #+#    #+#              #
-#    Updated: 2020/06/05 01:58:42 by unite            ###   ########.fr        #
+#    Updated: 2020/06/27 18:48:58 by unite            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,6 +51,7 @@ ft_putnbr.c \
 ft_putnbr_fd.c \
 ft_putnstr.c \
 ft_putnstr_fd.c \
+ft_puts.c \
 ft_putstr.c \
 ft_putstr_fd.c \
 ft_sqrt.c \
