@@ -6,7 +6,7 @@
 #    By: unite <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/26 02:09:26 by unite             #+#    #+#              #
-#    Updated: 2020/05/17 04:30:09 by unite            ###   ########.fr        #
+#    Updated: 2020/06/05 01:58:42 by unite            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ SRC_NAME = \
 ft_abs.c \
 ft_atoi.c \
 ft_bzero.c \
+ft_calloc.c \
 ft_isalnum.c \
 ft_isalpha.c \
 ft_isascii.c \
@@ -97,14 +98,8 @@ PATHO = obj
 
 ################################################################################
 
-RM = /bin/rm
-MKDIR = /bin/mkdir
-CC = /usr/bin/gcc
-
-COMPILE = $(CC) -c
-ARCHIVE = /usr/bin/ar rc
-INDEX = /usr/bin/ranlib
-LINK = $(CC)
+COMPILE = gcc -c
+LINK = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 CFLAGS += -I$(PATHI)
@@ -124,11 +119,11 @@ SRC = $(patsubst %.c, $(PATHS)/%.c, $(SRC_NAME))
 OBJ = $(patsubst %.c, $(PATHO)/%.o, $(SRC_NAME))
 
 $(NAME) : $(OBJ)
-	$(ARCHIVE) $(NAME) $(OBJ)
-	$(INDEX) $(NAME)
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 $(PATHO)/%.o : $(PATHS)/%.c
-	$(MKDIR) -p $(@D)
+	mkdir -p $(@D)
 	$(COMPILE) $(CFLAGS) $(CFLAGS_DEPEND) $(CFLAGS_OPTIMISE) $< -o $@
 
 ################################################################################
@@ -144,10 +139,10 @@ DEP = $(patsubst %.c, $(PATHO)/%.d, $(SRC_NAME))
 all : $(NAME)
 
 fclean : clean
-	$(RM) -f $(NAME)
+	rm -f $(NAME)
 
 clean :
-	$(RM) -rf $(PATHO)
+	rm -rf $(PATHO)
 
 re : fclean all
 

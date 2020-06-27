@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 15:17:22 by unite             #+#    #+#             */
-/*   Updated: 2020/06/27 18:26:46 by unite            ###   ########.fr       */
+/*   Updated: 2020/06/27 18:42:04 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
+
 
 
 /*
@@ -30,6 +31,7 @@
 ** @var s_list::next
 ** The next link’s address or `NULL` if it’s the last link.
 */
+
 typedef struct		s_list
 {
 	void			*content;
@@ -40,6 +42,7 @@ typedef struct		s_list
 int					ft_abs(int a);
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
+void				*ft_calloc(size_t count, size_t size);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);

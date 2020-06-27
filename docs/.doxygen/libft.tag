@@ -27,6 +27,13 @@
       <arglist>(void *s, size_t n)</arglist>
     </member>
     <member kind="function">
+      <type>void *</type>
+      <name>ft_calloc</name>
+      <anchorfile>libft_8h.html</anchorfile>
+      <anchor>a6747f1fa402c0eb1dde5b99d3cdc900f</anchor>
+      <arglist>(size_t count, size_t size)</arglist>
+    </member>
+    <member kind="function">
       <type>int</type>
       <name>ft_isalnum</name>
       <anchorfile>libft_8h.html</anchorfile>
