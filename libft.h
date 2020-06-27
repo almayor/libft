@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 15:17:22 by unite             #+#    #+#             */
-/*   Updated: 2020/05/17 04:46:53 by unite            ###   ########.fr       */
+/*   Updated: 2020/06/27 18:26:46 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
+
 
 /*
 ** @struct s_list
@@ -73,6 +74,7 @@ void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putnstr(char *s, size_t n);
 void				ft_putnstr_fd(char *s, size_t n, int fd);
+void				ft_puts(char const *s);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
 int					ft_sqrt(int num);

@@ -266,6 +266,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>ft_puts</name>
+      <anchorfile>libft_8h.html</anchorfile>
+      <anchor>a5819e66625978bace42f6607ccf0540a</anchor>
+      <arglist>(char const *s)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>ft_putstr</name>
       <anchorfile>libft_8h.html</anchorfile>
       <anchor>af059881fce329f6d9b5ff7a28ef2fd25</anchor>

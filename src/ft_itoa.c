@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 14:16:34 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 20:34:57 by unite            ###   ########.fr       */
+/*   Updated: 2020/06/27 18:24:21 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
-static size_t	ft_len(int n)
+static size_t	ft_int_len(int n)
 {
 	size_t	i;
 
@@ -22,22 +22,6 @@ static size_t	ft_len(int n)
 	while (n /= 10)
 		i++;
 	return (i);
-}
-
-static char		*ft_itoa_intmin(int n)
-{
-	char	*s1;
-	char	*s2;
-	char	*str;
-
-	s1 = ft_itoa(n / 10);
-	s2 = ft_itoa(-(n % 10));
-	str = ft_strjoin(s1, s2);
-	if (s1)
-		free(s1);
-	if (s2)
-		free(s2);
-	return (str);
 }
 
 /*
@@ -55,20 +39,17 @@ char			*ft_itoa(int n)
 	size_t	len;
 	int		tmp;
 
-	len = ft_len(n);
-	tmp = n;
-	if (n == INT_MIN)
-		return (ft_itoa_intmin(n));
+	len = ft_int_len(n);
+	tmp = n < 0 ? n : -n;
 	if (n < 0)
-	{
-		tmp = -n;
 		len++;
-	}
 	if (!(str = ft_strnew(len)))
 		return (NULL);
-	str[--len] = tmp % 10 + '0';
-	while (tmp /= 10)
-		str[--len] = tmp % 10 + '0';
+	while (tmp)
+	{
+		str[--len] = -(tmp % 10) + '0';
+		tmp /= 10;
+	}
 	if (n < 0)
 		str[--len] = '-';
 	return (str);

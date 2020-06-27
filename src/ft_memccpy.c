@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Mimic behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
 */
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)

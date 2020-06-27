@@ -14,7 +14,7 @@
 #include <limits.h>
 
 /*
-** Mimic behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
 */
 
 int		ft_atoi(const char *str)

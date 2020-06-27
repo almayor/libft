@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-** Mimic behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
 */
 
 char	*ft_strncpy(char *dst, const char *src, size_t len)
