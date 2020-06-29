@@ -77,18 +77,19 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/*   By: unite &lt;marvin@42.fr&gt;                       +#+  +:+       +#+        */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/*                                                +#+#+#+#+#+   +#+           */</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/*   Created: 2020/06/27 18:24:54 by unite             #+#    #+#             */</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/*   Updated: 2020/06/27 18:26:47 by unite            ###   ########.fr       */</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/*   Updated: 2020/06/29 17:10:35 by unite            ###   ########.fr       */</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/*                                                                            */</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/* ************************************************************************** */</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="libft_8h.html">libft.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="libft_8h.html#a5819e66625978bace42f6607ccf0540a">   19</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="libft_8h.html#a5819e66625978bace42f6607ccf0540a">ft_puts</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *s)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> (write(1, s, <a class="code" href="libft_8h.html#abbb8c6c4ed85d892e7f1509f65f5768a">ft_strlen</a>(s)));</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="libft_8h.html">libft.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="libft_8h.html#acb6949ba421ac5ba0278fd31a98cb5e3">   20</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="libft_8h.html#acb6949ba421ac5ba0278fd31a98cb5e3">ft_puts</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *s)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> (write(1, s, <a class="code" href="libft_8h.html#abbb8c6c4ed85d892e7f1509f65f5768a">ft_strlen</a>(s)));</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="alibft_8h_html_a5819e66625978bace42f6607ccf0540a"><div class="ttname"><a href="libft_8h.html#a5819e66625978bace42f6607ccf0540a">ft_puts</a></div><div class="ttdeci">void ft_puts(char const *s)</div><div class="ttdef"><b>Definition:</b> <a href="ft__puts_8c_source.html#l00019">ft_puts.c:19</a></div></div>
+<div class="ttc" id="alibft_8h_html_acb6949ba421ac5ba0278fd31a98cb5e3"><div class="ttname"><a href="libft_8h.html#acb6949ba421ac5ba0278fd31a98cb5e3">ft_puts</a></div><div class="ttdeci">int ft_puts(char const *s)</div><div class="ttdef"><b>Definition:</b> <a href="ft__puts_8c_source.html#l00020">ft_puts.c:20</a></div></div>
 <div class="ttc" id="alibft_8h_html"><div class="ttname"><a href="libft_8h.html">libft.h</a></div></div>
 <div class="ttc" id="alibft_8h_html_abbb8c6c4ed85d892e7f1509f65f5768a"><div class="ttname"><a href="libft_8h.html#abbb8c6c4ed85d892e7f1509f65f5768a">ft_strlen</a></div><div class="ttdeci">size_t ft_strlen(const char *s)</div><div class="ttdef"><b>Definition:</b> <a href="ft__strlen_8c_source.html#l00019">ft_strlen.c:19</a></div></div>
 <!-- start footer part -->

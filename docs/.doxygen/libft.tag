@@ -2,7 +2,7 @@
 <tagfile>
   <compound kind="file">
     <name>libft.h</name>
-    <path>/Users/almayor/Documents/programming/42/libft/</path>
+    <path>/Users/almayor/Documents/programming/42/ft_printf/libft/</path>
     <filename>libft_8h</filename>
     <class kind="struct">s_list</class>
     <member kind="function">
@@ -272,10 +272,10 @@
       <arglist>(char *s, size_t n, int fd)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>int</type>
       <name>ft_puts</name>
       <anchorfile>libft_8h.html</anchorfile>
-      <anchor>a5819e66625978bace42f6607ccf0540a</anchor>
+      <anchor>acb6949ba421ac5ba0278fd31a98cb5e3</anchor>
       <arglist>(char const *s)</arglist>
     </member>
     <member kind="function">

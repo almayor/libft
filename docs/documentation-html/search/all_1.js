@@ -38,7 +38,7 @@ var searchData=
   ['ft_5fputnbr_5ffd_37',['ft_putnbr_fd',['../libft_8h.html#a63cc0aec12256d125d3f85e472280972',1,'ft_putnbr_fd.c']]],
   ['ft_5fputnstr_38',['ft_putnstr',['../libft_8h.html#ab5d7a7dd97ae351629d02078aecfdc99',1,'ft_putnstr.c']]],
   ['ft_5fputnstr_5ffd_39',['ft_putnstr_fd',['../libft_8h.html#ae347c99d5737ca36036a1ca0050ec3a6',1,'ft_putnstr_fd.c']]],
-  ['ft_5fputs_40',['ft_puts',['../libft_8h.html#a5819e66625978bace42f6607ccf0540a',1,'ft_puts.c']]],
+  ['ft_5fputs_40',['ft_puts',['../libft_8h.html#acb6949ba421ac5ba0278fd31a98cb5e3',1,'ft_puts.c']]],
   ['ft_5fputstr_41',['ft_putstr',['../libft_8h.html#af059881fce329f6d9b5ff7a28ef2fd25',1,'ft_putstr.c']]],
   ['ft_5fputstr_5ffd_42',['ft_putstr_fd',['../libft_8h.html#a410faf134ffc2ca8180d5351a2b6c309',1,'ft_putstr_fd.c']]],
   ['ft_5fsqrt_43',['ft_sqrt',['../libft_8h.html#a7d3e1799eba7f1d8d1e8b70d503c2ce5',1,'ft_sqrt.c']]],
