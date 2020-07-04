@@ -13,7 +13,7 @@ else
 	doxygen docs/.doxygen/Doxyfile
 	find . -name "*.c" -exec perl -i -pe 's/^\/\*\*$/\/\*/' {} \;
 	find . -name "*.h" -exec perl -i -pe 's/^\/\*\*$/\/\*/' {} \; \
-					   -exec perl -i0 -pe 's/\/\/\/\\file\n//' {} \;
+					   -exec perl -i -pe 's/\/\/\/\\file\n//m' {} \;
 	make -C latex && cp latex/refman.pdf docs/documentation.pdf
 	rm -r latex
 	ln -sf documentation-html/libft_8h.html docs/documentation.html 
