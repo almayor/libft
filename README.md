@@ -9,11 +9,7 @@
 * [Code documentation](https://almayor.github.io/libft/)
 * The task is to recreate various functions from the standard C library, as well as to implement additional useful functions.
 * The project is consistent with the [Norme](docs/subjects/norme.en.pdf), the code standard accepted at *School 42*.
-* Use `make` to compile the library and include in projects with
-
-```c
-#include "libft.h"
-```
+* Use `make` to compile the library and `libft.h` in future projects
 * This project has been tested with [Moulitest](https://github.com/yyang42/moulitest).
 
 ### Acknowledgements
