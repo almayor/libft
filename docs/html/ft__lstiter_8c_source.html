@@ -77,27 +77,28 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/*   By: unite &lt;marvin@42.fr&gt;                       +#+  +:+       +#+        */</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/*                                                +#+#+#+#+#+   +#+           */</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/*   Created: 2019/09/05 16:51:17 by unite             #+#    #+#             */</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/*   Updated: 2020/07/16 03:02:16 by unite            ###   ########.fr       */</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/*   Updated: 2020/07/16 15:23:54 by unite            ###   ########.fr       */</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/*                                                                            */</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/* ************************************************************************** */</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="libft_8h.html">libft.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="libft_8h.html#aa240d9afffc91e32a111fc3185e8ed5f">   22</a></span>&#160;<span class="keywordtype">void</span>    <a class="code" href="ft__lstiter_8c.html#aa240d9afffc91e32a111fc3185e8ed5f">ft_lstiter</a>(<a class="code" href="structs__list.html">t_list</a> *lst, <span class="keywordtype">void</span> (*f)(<a class="code" href="structs__list.html">t_list</a> *elem))</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="ft__lstiter_8c.html#a7e9b54a6ab514eaa1d754cc682d22b34">   22</a></span>&#160;<span class="keywordtype">void</span>    <a class="code" href="ft__lstiter_8c.html#a7e9b54a6ab514eaa1d754cc682d22b34">ft_lstiter</a>(<a class="code" href="structs__list.html">t_list</a> *lst, <span class="keywordtype">void</span> (*f)(<span class="keywordtype">void</span> *<a class="code" href="structs__list.html#a5e7bcb97789f4440937bf7d76969bab3">content</a>))</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (!f)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        return ;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">while</span> (lst)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        f(lst);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        f(lst-&gt;<a class="code" href="structs__list.html#a5e7bcb97789f4440937bf7d76969bab3">content</a>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        lst = lst-&gt;<a class="code" href="structs__list.html#a06a0f2db4e8b126a362bbfa366c0ab09">next</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aft__lstiter_8c_html_aa240d9afffc91e32a111fc3185e8ed5f"><div class="ttname"><a href="ft__lstiter_8c.html#aa240d9afffc91e32a111fc3185e8ed5f">ft_lstiter</a></div><div class="ttdeci">void ft_lstiter(t_list *lst, void(*f)(t_list *elem))</div><div class="ttdoc">Applies a function to each member of a list.</div><div class="ttdef"><b>Definition:</b> <a href="ft__lstiter_8c_source.html#l00022">ft_lstiter.c:22</a></div></div>
-<div class="ttc" id="astructs__list_html"><div class="ttname"><a href="structs__list.html">s_list</a></div><div class="ttdoc">A link in a multi-purpose linked list.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00034">libft.h:34</a></div></div>
-<div class="ttc" id="astructs__list_html_a06a0f2db4e8b126a362bbfa366c0ab09"><div class="ttname"><a href="structs__list.html#a06a0f2db4e8b126a362bbfa366c0ab09">s_list::next</a></div><div class="ttdeci">struct s_list * next</div><div class="ttdoc">The next link’s address or NULL if it’s the last link.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00038">libft.h:38</a></div></div>
+<div class="ttc" id="astructs__list_html"><div class="ttname"><a href="structs__list.html">s_list</a></div><div class="ttdoc">A link in a generic linked list.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00030">libft.h:30</a></div></div>
+<div class="ttc" id="astructs__list_html_a5e7bcb97789f4440937bf7d76969bab3"><div class="ttname"><a href="structs__list.html#a5e7bcb97789f4440937bf7d76969bab3">s_list::content</a></div><div class="ttdeci">void * content</div><div class="ttdoc">The data contained in the link.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00032">libft.h:32</a></div></div>
+<div class="ttc" id="astructs__list_html_a06a0f2db4e8b126a362bbfa366c0ab09"><div class="ttname"><a href="structs__list.html#a06a0f2db4e8b126a362bbfa366c0ab09">s_list::next</a></div><div class="ttdeci">struct s_list * next</div><div class="ttdoc">The next link’s address or NULL if it’s the last link.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00033">libft.h:33</a></div></div>
 <div class="ttc" id="alibft_8h_html"><div class="ttname"><a href="libft_8h.html">libft.h</a></div></div>
+<div class="ttc" id="aft__lstiter_8c_html_a7e9b54a6ab514eaa1d754cc682d22b34"><div class="ttname"><a href="ft__lstiter_8c.html#a7e9b54a6ab514eaa1d754cc682d22b34">ft_lstiter</a></div><div class="ttdeci">void ft_lstiter(t_list *lst, void(*f)(void *content))</div><div class="ttdoc">Applies a function to each member of a list.</div><div class="ttdef"><b>Definition:</b> <a href="ft__lstiter_8c_source.html#l00022">ft_lstiter.c:22</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

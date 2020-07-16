@@ -77,37 +77,36 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/*   By: unite &lt;marvin@42.fr&gt;                       +#+  +:+       +#+        */</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/*                                                +#+#+#+#+#+   +#+           */</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/*   Created: 2019/09/05 16:40:13 by unite             #+#    #+#             */</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/*   Updated: 2020/07/16 03:03:19 by unite            ###   ########.fr       */</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/*   Updated: 2020/07/16 15:27:30 by unite            ###   ########.fr       */</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/*                                                                            */</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/* ************************************************************************** */</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="libft_8h.html">libft.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="libft_8h.html#a7df173f7d91aca457b6f3fcce7169911">   29</a></span>&#160;<span class="keywordtype">void</span>    <a class="code" href="ft__lstdel_8c.html#a7df173f7d91aca457b6f3fcce7169911">ft_lstdel</a>(<a class="code" href="structs__list.html">t_list</a> **alst, <span class="keywordtype">void</span> (*del)(<span class="keywordtype">void</span> *, <span class="keywordtype">size_t</span>))</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="structs__list.html">t_list</a> *head;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="structs__list.html">t_list</a> *new_head;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (!alst || !(*alst) || !del)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        return ;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    head = *alst;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">while</span> (head)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        new_head = head-&gt;<a class="code" href="structs__list.html#a06a0f2db4e8b126a362bbfa366c0ab09">next</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        del(head-&gt;<a class="code" href="structs__list.html#a5e7bcb97789f4440937bf7d76969bab3">content</a>, head-&gt;<a class="code" href="structs__list.html#a5118e3c8c065287667e21c0802cdec14">content_size</a>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        free(head);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        head = new_head;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    *alst = NULL;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="libft_8h.html#a9750785d911c39c59ebca161fa31aa7e">   28</a></span>&#160;<span class="keywordtype">void</span>    <a class="code" href="ft__lstdel_8c.html#a9750785d911c39c59ebca161fa31aa7e">ft_lstdel</a>(<a class="code" href="structs__list.html">t_list</a> **alst, <span class="keywordtype">void</span> (*del)(<span class="keywordtype">void</span> *))</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="structs__list.html">t_list</a> *head;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="structs__list.html">t_list</a> *new_head;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (!alst || !(*alst) || !del)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        return ;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    head = *alst;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">while</span> (head)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        new_head = head-&gt;<a class="code" href="structs__list.html#a06a0f2db4e8b126a362bbfa366c0ab09">next</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        del(head-&gt;<a class="code" href="structs__list.html#a5e7bcb97789f4440937bf7d76969bab3">content</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="ft__memdel_8c.html#ac653d8c9eb3f1d6809309a15e1661083">ft_memdel</a>(&amp;head);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        head = new_head;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructs__list_html_a5118e3c8c065287667e21c0802cdec14"><div class="ttname"><a href="structs__list.html#a5118e3c8c065287667e21c0802cdec14">s_list::content_size</a></div><div class="ttdeci">size_t content_size</div><div class="ttdoc">The size of the data stored in bytes.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00037">libft.h:37</a></div></div>
-<div class="ttc" id="aft__lstdel_8c_html_a7df173f7d91aca457b6f3fcce7169911"><div class="ttname"><a href="ft__lstdel_8c.html#a7df173f7d91aca457b6f3fcce7169911">ft_lstdel</a></div><div class="ttdeci">void ft_lstdel(t_list **alst, void(*del)(void *, size_t))</div><div class="ttdoc">Deletes all links in a list.</div><div class="ttdef"><b>Definition:</b> <a href="ft__lstdel_8c_source.html#l00029">ft_lstdel.c:29</a></div></div>
-<div class="ttc" id="astructs__list_html"><div class="ttname"><a href="structs__list.html">s_list</a></div><div class="ttdoc">A link in a multi-purpose linked list.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00034">libft.h:34</a></div></div>
-<div class="ttc" id="astructs__list_html_a5e7bcb97789f4440937bf7d76969bab3"><div class="ttname"><a href="structs__list.html#a5e7bcb97789f4440937bf7d76969bab3">s_list::content</a></div><div class="ttdeci">void * content</div><div class="ttdoc">The data contained in the link.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00036">libft.h:36</a></div></div>
-<div class="ttc" id="astructs__list_html_a06a0f2db4e8b126a362bbfa366c0ab09"><div class="ttname"><a href="structs__list.html#a06a0f2db4e8b126a362bbfa366c0ab09">s_list::next</a></div><div class="ttdeci">struct s_list * next</div><div class="ttdoc">The next link’s address or NULL if it’s the last link.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00038">libft.h:38</a></div></div>
+<div class="ttc" id="astructs__list_html"><div class="ttname"><a href="structs__list.html">s_list</a></div><div class="ttdoc">A link in a generic linked list.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00030">libft.h:30</a></div></div>
+<div class="ttc" id="astructs__list_html_a5e7bcb97789f4440937bf7d76969bab3"><div class="ttname"><a href="structs__list.html#a5e7bcb97789f4440937bf7d76969bab3">s_list::content</a></div><div class="ttdeci">void * content</div><div class="ttdoc">The data contained in the link.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00032">libft.h:32</a></div></div>
+<div class="ttc" id="astructs__list_html_a06a0f2db4e8b126a362bbfa366c0ab09"><div class="ttname"><a href="structs__list.html#a06a0f2db4e8b126a362bbfa366c0ab09">s_list::next</a></div><div class="ttdeci">struct s_list * next</div><div class="ttdoc">The next link’s address or NULL if it’s the last link.</div><div class="ttdef"><b>Definition:</b> <a href="libft_8h_source.html#l00033">libft.h:33</a></div></div>
 <div class="ttc" id="alibft_8h_html"><div class="ttname"><a href="libft_8h.html">libft.h</a></div></div>
+<div class="ttc" id="aft__lstdel_8c_html_a9750785d911c39c59ebca161fa31aa7e"><div class="ttname"><a href="ft__lstdel_8c.html#a9750785d911c39c59ebca161fa31aa7e">ft_lstdel</a></div><div class="ttdeci">void ft_lstdel(t_list **alst, void(*del)(void *))</div><div class="ttdoc">Deletes all links in a list.</div><div class="ttdef"><b>Definition:</b> <a href="ft__lstdel_8c_source.html#l00028">ft_lstdel.c:28</a></div></div>
+<div class="ttc" id="aft__memdel_8c_html_ac653d8c9eb3f1d6809309a15e1661083"><div class="ttname"><a href="ft__memdel_8c.html#ac653d8c9eb3f1d6809309a15e1661083">ft_memdel</a></div><div class="ttdeci">void ft_memdel(void **ap)</div><div class="ttdoc">Frees memory where a pointer points to and sets the pointer to NULL.</div><div class="ttdef"><b>Definition:</b> <a href="ft__memdel_8c_source.html#l00022">ft_memdel.c:22</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

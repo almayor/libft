@@ -91,13 +91,13 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8dece7305a1dd0daff7c66f975c95b86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ft__lstdelone_8c.html#a8dece7305a1dd0daff7c66f975c95b86">ft_lstdelone</a> (<a class="el" href="structs__list.html">t_list</a> **alst, void(*del)(void *, size_t))</td></tr>
-<tr class="memdesc:a8dece7305a1dd0daff7c66f975c95b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes one link of a list.  <a href="ft__lstdelone_8c.html#a8dece7305a1dd0daff7c66f975c95b86">More...</a><br /></td></tr>
-<tr class="separator:a8dece7305a1dd0daff7c66f975c95b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa9cee22b3110db2c5948771ffa6c37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ft__lstdelone_8c.html#a9fa9cee22b3110db2c5948771ffa6c37">ft_lstdelone</a> (<a class="el" href="structs__list.html">t_list</a> **alst, void(*del)(void *))</td></tr>
+<tr class="memdesc:a9fa9cee22b3110db2c5948771ffa6c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes one link of a list.  <a href="ft__lstdelone_8c.html#a9fa9cee22b3110db2c5948771ffa6c37">More...</a><br /></td></tr>
+<tr class="separator:a9fa9cee22b3110db2c5948771ffa6c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a8dece7305a1dd0daff7c66f975c95b86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dece7305a1dd0daff7c66f975c95b86">&#9670;&nbsp;</a></span>ft_lstdelone()</h2>
+<a id="a9fa9cee22b3110db2c5948771ffa6c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa9cee22b3110db2c5948771ffa6c37">&#9670;&nbsp;</a></span>ft_lstdelone()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -111,7 +111,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(void *, size_t)&#160;</td>
+          <td class="paramtype">void(*)(void *)&#160;</td>
           <td class="paramname"><em>del</em>&#160;</td>
         </tr>
         <tr>
@@ -123,15 +123,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Deletes one link of a list. </p>
-<p>Takes as a parameter a link’s pointer address and frees the memory of the link’s content using the function <code>del</code> given as a parameter, then frees the link’s memory using <code>free</code>. The memory of next must not be freed under any circumstance. Finally, the pointer to the link that was just freed must be set to <code>NULL</code> (quite similar to the function <code>memdel</code>). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Takes as a parameter a link’s pointer address and frees the memory of the link’s content using the function <code>del</code> given as a parameter, then frees the link’s memory using <code>free</code>. Finally, the pointer to the link that was just freed is set to <code>NULL</code>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">alst</td><td>The adress of a pointer to a link that needs to be freed. </td></tr>
-    <tr><td class="paramname">del</td><td>The address of a function to apply to each link of a list. </td></tr>
+    <tr><td class="paramname">del</td><td>The address of a function to apply to the content of each link. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ft__lstdelone_8c_source.html#l00029">29</a> of file <a class="el" href="ft__lstdelone_8c_source.html">ft_lstdelone.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ft__lstdelone_8c_source.html#l00028">28</a> of file <a class="el" href="ft__lstdelone_8c_source.html">ft_lstdelone.c</a>.</p>
 
 </div>
 </div>

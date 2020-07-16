@@ -100,22 +100,15 @@
       <type>void</type>
       <name>ft_lstdel</name>
       <anchorfile>libft_8h.html</anchorfile>
-      <anchor>a7df173f7d91aca457b6f3fcce7169911</anchor>
-      <arglist>(t_list **alst, void(*del)(void *, size_t))</arglist>
+      <anchor>a9750785d911c39c59ebca161fa31aa7e</anchor>
+      <arglist>(t_list **alst, void(*del)(void *))</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>ft_lstdelone</name>
       <anchorfile>libft_8h.html</anchorfile>
-      <anchor>a8dece7305a1dd0daff7c66f975c95b86</anchor>
-      <arglist>(t_list **alst, void(*del)(void *, size_t))</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>ft_lstiter</name>
-      <anchorfile>libft_8h.html</anchorfile>
-      <anchor>aa240d9afffc91e32a111fc3185e8ed5f</anchor>
-      <arglist>(t_list *lst, void(*f)(t_list *elem))</arglist>
+      <anchor>a9fa9cee22b3110db2c5948771ffa6c37</anchor>
+      <arglist>(t_list **alst, void(*del)(void *))</arglist>
     </member>
     <member kind="function">
       <type>t_list *</type>
@@ -123,13 +116,6 @@
       <anchorfile>libft_8h.html</anchorfile>
       <anchor>a398b40d6bb7fac59e8869daff5d99f8d</anchor>
       <arglist>(t_list *head)</arglist>
-    </member>
-    <member kind="function">
-      <type>t_list *</type>
-      <name>ft_lstmap</name>
-      <anchorfile>libft_8h.html</anchorfile>
-      <anchor>a4d5b0bb067dc6d891ab58e600a20d574</anchor>
-      <arglist>(t_list *lst, t_list *(*f)(t_list *elem))</arglist>
     </member>
     <member kind="function">
       <type>t_list *</type>
@@ -722,8 +708,8 @@
       <type>void</type>
       <name>ft_lstdel</name>
       <anchorfile>ft__lstdel_8c.html</anchorfile>
-      <anchor>a7df173f7d91aca457b6f3fcce7169911</anchor>
-      <arglist>(t_list **alst, void(*del)(void *, size_t))</arglist>
+      <anchor>a9750785d911c39c59ebca161fa31aa7e</anchor>
+      <arglist>(t_list **alst, void(*del)(void *))</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -735,8 +721,8 @@
       <type>void</type>
       <name>ft_lstdelone</name>
       <anchorfile>ft__lstdelone_8c.html</anchorfile>
-      <anchor>a8dece7305a1dd0daff7c66f975c95b86</anchor>
-      <arglist>(t_list **alst, void(*del)(void *, size_t))</arglist>
+      <anchor>a9fa9cee22b3110db2c5948771ffa6c37</anchor>
+      <arglist>(t_list **alst, void(*del)(void *))</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -748,8 +734,8 @@
       <type>void</type>
       <name>ft_lstiter</name>
       <anchorfile>ft__lstiter_8c.html</anchorfile>
-      <anchor>aa240d9afffc91e32a111fc3185e8ed5f</anchor>
-      <arglist>(t_list *lst, void(*f)(t_list *elem))</arglist>
+      <anchor>a7e9b54a6ab514eaa1d754cc682d22b34</anchor>
+      <arglist>(t_list *lst, void(*f)(void *content))</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -763,19 +749,6 @@
       <anchorfile>ft__lstlast_8c.html</anchorfile>
       <anchor>aa79e167d6ec8f17866085697fff01b13</anchor>
       <arglist>(t_list *lst)</arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>ft_lstmap.c</name>
-    <path>/Users/almayor/Documents/programming/42/libft/src/</path>
-    <filename>ft__lstmap_8c</filename>
-    <includes id="libft_8h" name="libft.h" local="yes" imported="no">libft.h</includes>
-    <member kind="function">
-      <type>t_list *</type>
-      <name>ft_lstmap</name>
-      <anchorfile>ft__lstmap_8c.html</anchorfile>
-      <anchor>a4d5b0bb067dc6d891ab58e600a20d574</anchor>
-      <arglist>(t_list *lst, t_list *(*f)(t_list *elem))</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -1550,13 +1523,6 @@
       <name>content</name>
       <anchorfile>structs__list.html</anchorfile>
       <anchor>a5e7bcb97789f4440937bf7d76969bab3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>size_t</type>
-      <name>content_size</name>
-      <anchorfile>structs__list.html</anchorfile>
-      <anchor>a5118e3c8c065287667e21c0802cdec14</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">

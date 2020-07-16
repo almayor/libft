@@ -123,7 +123,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Allocates a new list. </p>
-<p>Allocates (with <code>malloc</code>) and returns a “fresh” link. The variables content and content_size of the new link are initialized by copy of the parameters of the function. If the parameter <code>content</code> is <code>NULL</code>, the variable <code>content</code> is initialized to <code>NULL</code> and the variable <code>content_size</code> is initialized to <code>0</code> even if the parameter <code>content_size</code> isn’t. The variable <code>next</code> is initialized to <code>NULL</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Allocates (with <code>malloc</code>) and returns a “fresh” link. The variables content and content_size of the new link are initialized by copy of the parameters of the function. If either of the parameters <code>content</code> and <code>content_size</code> are <code>NULL</code>, the variable <code>content</code> is initialized to <code>NULL</code>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">content</td><td>The content to put in the new link. </td></tr>
     <tr><td class="paramname">content_size</td><td>The size of the content of the new link. </td></tr>
@@ -132,7 +132,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new link, or <code>NULL</code> if allocation fails. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ft__lstnew_8c_source.html#l00031">31</a> of file <a class="el" href="ft__lstnew_8c_source.html">ft_lstnew.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ft__lstnew_8c_source.html#l00029">29</a> of file <a class="el" href="ft__lstnew_8c_source.html">ft_lstnew.c</a>.</p>
 
 </div>
 </div>
