@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 00:43:42 by unite             #+#    #+#             */
-/*   Updated: 2020/07/16 02:41:36 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 03:22:42 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 ** @param s The string to map.
 ** @param f The function to apply to each character of `s`.
 ** @return	The “fresh” string created from the successive applications of `f`,
-			or `NULL` if allocation fails.
+**			or `NULL` if allocation fails.
 */
 
 char	*ft_strmap(char const *s, char (*f)(char))
