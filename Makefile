@@ -6,7 +6,7 @@
 #    By: unite <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/26 02:09:26 by unite             #+#    #+#              #
-#    Updated: 2020/06/27 18:48:58 by unite            ###   ########.fr        #
+#    Updated: 2020/07/16 12:20:27 by unite            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,14 +24,6 @@ ft_isdigit.c \
 ft_isprint.c \
 ft_isspace.c \
 ft_itoa.c \
-ft_lstadd.c \
-ft_lstappend.c \
-ft_lstdel.c \
-ft_lstdelone.c \
-ft_lstiter.c \
-ft_lstlast.c \
-ft_lstmap.c \
-ft_lstnew.c \
 ft_max.c \
 ft_memalloc.c \
 ft_memccpy.c \
