@@ -7,7 +7,7 @@
 
 * [Official instructions](docs/subjects/libft.en.pdf)
 * [Code documentation](https://almayor.github.io/libft/)
-* The task is to recreate various standard C library functions, as well as additional useful functions.
+* The task is to recreate various functions from the standard C library, as well as to implement additional useful functions.
 * The project is consistent with the [Norme](docs/subjects/norme.en.pdf), the code standard accepted at *School 42*.
 * Use `make` to compile the library and include in projects with
 
