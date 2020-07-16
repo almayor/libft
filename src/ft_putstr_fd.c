@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 13:55:36 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:36:31 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:53:24 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <unistd.h>
 
 /*
-** Outputs the string `s` to the file descriptor `fd`.
+** Writes a string to a file descriptor.
 ** @param s The string to output.
 ** @param fd The file descriptor.
 */

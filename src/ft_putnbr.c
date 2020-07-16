@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 14:55:46 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:36:03 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:54:02 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Outputs the integer `n` to the standard output.
+** Writes an integer to the standard output.
 ** @param n The integer to output.
 */
 

@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 14:59:38 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 20:16:23 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:54:15 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <limits.h>
 
 /*
-** Outputs the integer `n` to the file descriptor `fd`.
+** Writes an integer to a file descriptor.
 ** @param n The integer to print.
 ** @param fd The file descriptor.
 */

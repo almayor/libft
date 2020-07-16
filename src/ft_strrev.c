@@ -6,19 +6,20 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 14:44:25 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:41:58 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:42:57 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Allocates (with `malloc`) and returns a “reversed” `NULL`-terminated string
-** or `NULL` if allocation fails.
-**
-** Example: `ft_strrev("0123456789")` returns `"9876543210"`
+** @brief Reverses a string
+** @details	Allocates (with `malloc`) and returns a “reversed”
+** `NULL`-terminated string.
+** @par Example
+** `ft_strrev("0123456789")` returns `"9876543210"`
 ** @param s String to be reversed.
-** @return Reversed string.
+** @return Reversed string or `NULL` if allocation failed.
 */
 
 char	*ft_strrev(const char *s)

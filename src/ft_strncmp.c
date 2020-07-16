@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 19:33:19 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:39:23 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:41:56 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `strncmp` from `libc`.
 */
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

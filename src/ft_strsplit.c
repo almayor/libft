@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 13:31:18 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 22:26:46 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:43:07 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,17 +53,17 @@ static size_t		count_words(const char *s, char delim)
 }
 
 /*
-** Allocates (with `malloc`) and returns an array of “fresh”
+** @brief Splits a string on whitespace characters
+** @details Allocates (with `malloc`) and returns an array of “fresh”
 ** strings (all ending with ``'\0'``, including the array itself) obtained
 ** by splitting `s` using the character `c` as a delimiter.
-** If the allocation fails the function returns `NULL`.
-**
-** Example :
+** @par Example
 ** ``ft_strsplit("*hello*fellow***students*", ’*’)``
 ** returns the array ``["hello", "fellow", "students"]``.
 ** @param s The string to split.
 ** @param delim The delimiter character.
-** @return The array of “fresh” strings result of the split.
+** @return	The array of “fresh” strings result of the split or `NULL` if
+**			any of the allocations failed.
 */
 
 char				**ft_strsplit(char const *s, char delim)

@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/20 21:44:32 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:34:23 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 03:03:37 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 /*
 ** Adds the element new at the end of the list.
-** @param alst The address of a pointer to the first link of a list.
-** @param new The link to add at the beginning of the list.
+** @param alst The  pointer to the first link in a list
+** @param new The link to add at the beginning of the list
 */
 
 void	ft_lstappend(t_list **alst, t_list *new)

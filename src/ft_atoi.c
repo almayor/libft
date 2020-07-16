@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 23:56:29 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 19:23:45 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 03:05:43 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <limits.h>
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `atoi` from `libc`.
 */
 
 int		ft_atoi(const char *str)

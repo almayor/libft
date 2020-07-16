@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 13:49:16 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:35:41 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:55:14 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <unistd.h>
 
 /*
-** Outputs the character `c` to the standard output.
+** Writes a character to the standard output.
 ** @param c The character to output.
 */
 

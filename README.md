@@ -6,10 +6,11 @@
 
 
 * [Official instructions](docs/subjects/libft.en.pdf)
+* [Code documentation] (https://almayor.github.io/libft/)
 * The task is to recreate various standard C library functions, as well as additional useful functions.
-* Documentation ([html](https://rawcdn.githack.com/almayor/libft/master/docs/documentation-html/libft_8h.html), [pdf](docs/documentation.pdf)) generated with [Doxygen](http://www.doxygen.nl).
 * The project is consistent with the [Norme](docs/subjects/norme.en.pdf), the code standard accepted at *School 42*.
 * Use `make` to compile the library and include in projects with
+
 ```c
 #include "libft.h"
 ```

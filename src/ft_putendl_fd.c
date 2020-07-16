@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 13:56:47 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:35:58 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:55:05 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Outputs the string `s` to the file descriptor `fd` followed by a ``'\n'``.
+** Writes a string to a file descriptor followed by a newline.
 ** @param s The string to output.
 ** @param fd The file descriptor.
 */

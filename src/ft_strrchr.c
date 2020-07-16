@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 23:31:57 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:41:54 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:42:55 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `strrchr` from `libc`.
 */
 
 char	*ft_strrchr(const char *s, int c)

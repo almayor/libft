@@ -8,13 +8,15 @@ command -v doxygen >/dev/null
 if [ $? -ne 0 ]; then
 	echo "Please install Doxygen!"
 else
-	find . -name "*.c" -exec perl -i -pe 's/^\/\*$/\/\*\*/' {} \;
-	find . -name "*.h" -exec perl -i -pe 's/^\/\*$/\/\/\/\\file\n\/\*\*/' {} \;
+	find src -type f \
+		-exec sed -i '1s#^#///\\file\n#' {} \; \
+		-exec perl -i -pe 's#^\/\*$#/\*\*#' {} \;
+	sed -i '1s#^#///\\file\n#' libft.h
+	perl -i -pe 's#^\/\*$#/\*\*#' libft.h
 	doxygen docs/.doxygen/Doxyfile
-	find . -name "*.c" -exec perl -i -pe 's/^\/\*\*$/\/\*/' {} \;
-	find . -name "*.h" -exec perl -i -pe 's/^\/\*\*$/\/\*/' {} \; \
-					   -exec perl -i -pe 's/\/\/\/\\file\n//m' {} \;
-	make -C latex && cp latex/refman.pdf docs/documentation.pdf
-	rm -r latex
-	ln -sf documentation-html/libft_8h.html docs/documentation.html 
+	find src -type f \
+		-exec sed -i '1d' {} \; \
+		-exec perl -i -pe 's#^\/\*\*$#/\*#' {} \;
+	sed -i '1d' libft.h
+	perl -i -pe 's#^\/\*\*$#/\*#' libft.h
 fi

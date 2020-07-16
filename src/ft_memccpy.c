@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 22:37:14 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:40:53 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:57:29 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `memcpy` from `libc`.
 */
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)

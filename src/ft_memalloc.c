@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 00:27:33 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:40:48 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 03:00:08 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 #include <stdlib.h>
 
 /*
-** Allocates (with `malloc`) and returns a “fresh” memory area.
-** The memory allocated is initialized to 0.
-** If the allocation fails, the function returns `NULL`.
+** Allocates memory of a given size and initializes it to 0.
 ** @param size The size of the memory that needs to be allocated.
-** @return The allocated memory area.
+** @return The allocated memory area, or `NULL` if allocation fails.
+** @see ft_calloc
 */
 
 void	*ft_memalloc(size_t size)

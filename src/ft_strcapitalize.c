@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 22:51:50 by unite             #+#    #+#             */
-/*   Updated: 2020/05/14 03:02:08 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:52:28 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,16 @@ static void	capitalize_word(char **s)
 }
 
 /*
-** Capitalizes all words (defined as stretches of alpha-numeric
+** @brief Capitalizes all words in a string
+** @details Capitalizes all words (defined as stretches of alpha-numeric
 ** characters) in a `NULL`-terminated string and writes them to a
 ** newly allocated string.
-**
-** Example: ``ft_strcapitalize("My word IS 42about%8THEM")`` returns ``"My Word
-** Is 42about%8them")``
+** @par Example
+** ``ft_strcapitalize("My word IS 42about%8THEM")``
+** returns ``"My Word Is 42about%8them")``
 ** @param s1 The string to capitalize.
-** @return A duplicate of `str` in which all words have been capitalized. If
-** `str` is a `NULL` pointer or allocation fails, `NULL` is returned.
+** @return	A duplicate of `str` in which all words have been capitalized,
+**			or `NULL` if allocation fails.
 */
 
 char		*ft_strcapitalize(const char *s1)

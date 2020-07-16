@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:40:13 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:34:28 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 03:03:19 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 #include <stdlib.h>
 
 /*
-** Takes as a parameter the address of a pointer to a link and
+** @brief Deletes all links in a list
+** @details Takes as a parameter the address of a pointer to a link and
 ** frees the memory of this link and every successors of that link
 ** using the functions `del` and `free`. Finally the pointer to
 ** the link that was just freed must be set to `NULL` (quite similar

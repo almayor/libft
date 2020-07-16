@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 11:57:03 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 20:10:53 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:44:04 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,16 @@ static int	is_trimmable(char c)
 }
 
 /*
-** Allocates (with `malloc`) and returns a copy of the string
+** @brief Trims whitespace from the start and end of a string
+** @details Allocates (with `malloc`) and returns a copy of the string
 ** given as argument without whitespaces at the beginning or at
 ** the end of the string. Will be considered as whitespaces the
 ** following characters ``' '``, ``'\n'`` and ``'\t'``. If `s` has no
 ** whitespaces at the beginning or at the end, the function returns a
-** copy of `s`. If the allocation fails the function returns `NULL`.
+** copy of `s`.
 ** @param s The string to be trimmed.
-** @return The “fresh” trimmed string or a copy of `s`.
+** @return	The “fresh” trimmed string or a copy of `s` or `NULL` if allocation
+**			failed.
 */
 
 char		*ft_strtrim(char const *s)

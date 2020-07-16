@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 22:32:01 by unite             #+#    #+#             */
-/*   Updated: 2020/05/14 03:01:57 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:53:55 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <unistd.h>
 
 /*
-** Outputs the first n characters of the string `s` to the file descriptor `fd`.
+** Writes the first n characters of a string to a file descriptor.
 ** @param s The string, the characters of which to output.
 ** @param n The number of characters to output.
 ** @param fd The file descriptor.

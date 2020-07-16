@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 13:51:34 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:35:51 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:54:35 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Outputs the string `s` to the standard output followed by a ``'\n'``.
+** Writes a string to the standard output followed by a newline.
 ** @param s The string to output.
 */
 

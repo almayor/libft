@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 16:04:34 by unite             #+#    #+#             */
-/*   Updated: 2020/05/23 18:18:01 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:56:06 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `memset` from `libc`.
 */
 
 void	*ft_memset(void *b, int c, size_t len)

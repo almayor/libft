@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/02 02:48:10 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:39:14 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:44:20 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `strlcpy` from `libc`.
 */
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t maxlen)

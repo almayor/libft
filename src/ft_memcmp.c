@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 19:03:58 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:35:05 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:57:18 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `memcmp` from `libc`.
 */
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

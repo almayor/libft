@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 13:52:43 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:35:47 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:55:25 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <unistd.h>
 
 /*
-** Outputs the char `c` to the file descriptor `fd`.
+** Writes a character to a file descriptor.
 ** @param c The character to output.
 ** @param fd The file descriptor.
 */

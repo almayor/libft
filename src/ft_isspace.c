@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 22:30:10 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:32:06 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 03:04:36 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `isspace` from `libc`.
 */
 
 int		ft_isspace(int c)

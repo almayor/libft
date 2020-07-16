@@ -6,12 +6,12 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/20 21:48:17 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:36:36 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:52:47 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Computes an integer square root of a given number.
+** Computes an integer square root of a given number, if it exists.
 ** @param num The number of which to take a square root.
 ** @return The integer square root, or `-1` if it doesn't exit.
 */

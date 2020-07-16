@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 00:27:33 by unite             #+#    #+#             */
-/*   Updated: 2020/05/22 04:11:52 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 03:05:27 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 
 /*
-** Mimic behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `calloc` from `libc`.
 */
 
 void	*ft_calloc(size_t count, size_t size)

@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 23:47:47 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 19:53:59 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:42:54 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `strnstr` from `libc`.
 */
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)

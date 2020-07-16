@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 22:50:26 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:41:26 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:50:17 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `strdup` from `libc`.
 */
 
 char	*ft_strdup(const char *s1)

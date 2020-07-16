@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 13:50:06 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:36:27 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:53:18 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <unistd.h>
 
 /*
-** Outputs the string `s` to the standard output.
+** Writes a string to the standard output.
 ** @param s The string to output.
 */
 

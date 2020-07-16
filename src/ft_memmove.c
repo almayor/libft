@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 22:24:03 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:41:04 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:56:55 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `memmove` from `libc`.
 */
 
 void	*ft_memmove(void *dst, const void *src, size_t n)

@@ -6,19 +6,21 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 00:43:42 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:41:33 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:41:36 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Applies the function `f` to each character of the string given
+** @brief Maps a function to characters of a string
+** @details Applies the function `f` to each character of the string given
 ** as argument to create a “fresh” new string (with `malloc`)
 ** resulting from the successive applications of `f`.
 ** @param s The string to map.
 ** @param f The function to apply to each character of `s`.
-** @return The “fresh” string created from the successive applications of `f`.
+** @return	The “fresh” string created from the successive applications of `f`,
+			or `NULL` if allocation fails.
 */
 
 char	*ft_strmap(char const *s, char (*f)(char))

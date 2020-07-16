@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 14:16:34 by unite             #+#    #+#             */
-/*   Updated: 2020/06/27 18:24:21 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 03:04:24 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,7 @@ static size_t	ft_int_len(int n)
 }
 
 /*
-** Allocate (with `malloc`) and returns a “fresh” string ending with ``'\0'``
-** representing the integer n given as argument.
-** Negative numbers must be supported. If the allocation fails,
-** the function returns `NULL`.
-** @param n The integer to be transformed into a string.
-** @return The string representing the integer passed as argument.
+** Replicates behaviour of `itoa` from `libc`
 */
 
 char			*ft_itoa(int n)

@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/01 04:51:37 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:39:05 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:44:58 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Returns the last characters (excluding `NULL`-termination) of a string.
+** Returns the last characters (other than `NULL`-termination) of a string.
 ** @param str The string.
 ** @return The last character of the string, or `0` if it is empty.
 */

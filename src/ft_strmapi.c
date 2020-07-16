@@ -6,20 +6,22 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 00:46:53 by unite             #+#    #+#             */
-/*   Updated: 2020/05/14 03:03:16 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:41:08 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
+** @brief Maps a function to characters of a string and their indices
 ** Applies the function `f` to each character of the string passed
 ** as argument by giving its index as first argument to create a
 ** “fresh” new string (with `malloc`) resulting from the successive
 ** applications of `f`.
 ** @param s The string to map.
 ** @param f The function to apply to each character and its index of `s`.
-** @return The “fresh” string created from the successive applications of f.
+** @return	The “fresh” string created from the successive applications of f,
+			or `NULL` if allocation fails.
 */
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))

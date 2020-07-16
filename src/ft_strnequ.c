@@ -6,16 +6,16 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 00:51:03 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:39:29 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:42:43 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Lexicographical comparison between `s1` and `s2` up to n characters
-** or until a ``'\0'`` is reached. If the 2 strings are identical,
-** the function returns `1`, or `0` otherwise.
+** @brief Checks that two strings are unequal
+** @details Lexicographical comparison between `s1` and `s2`
+** up to`n` characters or until a ``'\0'`` is reached.
 ** @param s1 The first string to be compared.
 ** @param s2 The second string to be compared.
 ** @param n The maximum number of characters to be compared.

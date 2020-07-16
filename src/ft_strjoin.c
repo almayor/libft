@@ -6,14 +6,15 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 11:53:04 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:41:29 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:45:13 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Allocates (with `malloc`) and returns a “fresh” string ending
+** @brief Joins two strings
+** @details Allocates (with `malloc`) and returns a “fresh” string ending
 ** with ``'\0'``, result of the concatenation of `s1` and `s2`. If
 ** the allocation fails the function returns `NULL`.
 ** @param s1 The prefix string.

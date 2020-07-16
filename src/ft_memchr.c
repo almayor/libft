@@ -6,14 +6,14 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 22:43:07 by unite             #+#    #+#             */
-/*   Updated: 2020/03/31 18:40:56 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:57:24 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Replicate behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `memchr` from `libc`.
 */
 
 void	*ft_memchr(const void *s, int c, size_t n)

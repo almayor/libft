@@ -6,7 +6,7 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 18:24:54 by unite             #+#    #+#             */
-/*   Updated: 2020/06/29 17:10:35 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 02:53:32 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "libft.h"
 
 /*
-** Replicates behaviour of a function of the same name (sans `ft_`) from `libc`.
+** Replicates behaviour of `puts` from `libc`.
 */
 
 int	ft_puts(const char *s)

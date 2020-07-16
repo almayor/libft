@@ -6,28 +6,28 @@
 /*   By: unite <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 15:17:22 by unite             #+#    #+#             */
-/*   Updated: 2020/07/04 10:55:04 by unite            ###   ########.fr       */
+/*   Updated: 2020/07/16 03:07:27 by unite            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
+
 # define LIBFT_H
 
 # include <string.h>
 
 /*
 ** @struct s_list
-** Represent links of a list.
+** @brief A link in a multi-purpose linked list
 ** @var s_list::content
-** The data contained in the link. The `void *` allows to store any
-** kind of data.
+** @brief The data contained in the link.
+** @details The `void *` allows to store any kind of data.
 ** @var s_list::content_size
-** The size of the data stored. The `void *` type doesn’t allow
-** you to know the size of the pointed data, as a consequence, it is necessary
-** to save its size. For instance, the size of the string ``"42"`` is 3 bytes
-** and the 32 bits integer 42 has a size of 4 bytes.
+** @brief The size of the data stored in bytes.
+** @details The `void *` type doesn’t allow you to know the size of the
+** pointed data, so it is necessary to save its size.
 ** @var s_list::next
-** The next link’s address or `NULL` if it’s the last link.
+** @brief The next link’s address or `NULL` if it’s the last link.
 */
 
 typedef struct		s_list
